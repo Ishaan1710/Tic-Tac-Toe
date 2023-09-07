@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <span>TIC TAC TOE</span>
+    </nav>
+    <div class="game-box">
+        <div class="game">
+            <div class="game-btn"><span class="btn-text"></span></div>
+            <div class="game-btn"><span class="btn-text"></span></div>
+            <div class="game-btn"><span class="btn-text"></span></div>
+            <div class="game-btn"><span class="btn-text"></span></div>
+            <div class="game-btn"><span class="btn-text"></span></div>
+            <div class="game-btn"><span class="btn-text"></span></div>
+            <div class="game-btn"><span class="btn-text"></span></div>
+            <div class="game-btn"><span class="btn-text"></span></div>
+            <div class="game-btn"><span class="btn-text"></span></div>
+        </div>
+        <div class="game-info">
+            <div class="msg">
+                <h1>Let's Play Tic Tac Toe</h1>
+                    Bubu and Dudu style
+                <p class="info">Bubu's turn</p>
+            </div>
+            <div class="emotion">
+                <div class="bubu">
+                    <h3>X - Bubu</h3>
+                    <img src="bu-origin.gif" id="orig-bu">
+                    <img src="bubu-win.gif" alt="Bubu wins!!!" id="buwin">
+                    <img src="bubu-lose.gif" alt="Bubu lost!!!" id="bulose">
+                </div>
+                <div class="dudu">
+                    <h3>O - Dudu</h3>
+                    <img src="du-origin.gif" id="orig-du">
+                    <img src="dudu-win.gif" alt="Dudu wins!!!" id="duwin">
+                    <img src="dudu-lose.gif" alt="Dudu lost!!!" id="dulose">
+                </div>
+            </div>
+            <div class="reset"><button id="reset" onclick="reset()">Restart</button></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

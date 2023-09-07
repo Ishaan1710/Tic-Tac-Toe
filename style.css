@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2018/03/17/19/36/connection-3234929_1280.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: antiquewhite;
+    font-family: 'Pacifico', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+span{
+    font-size: 25px;
+    align-items: center;
+}
+
+nav{
+    background-color: black;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.game{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+}
+
+.game-btn{
+    margin: 2px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 5px;
+    caret-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-text{
+    color: black;
+}
+
+.game-btn:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.game-info{
+    padding: 0 35px;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.emotion{
+    display: flex;
+    flex-direction: column;
+}
+
+.bubu{
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.bubu > h3{
+    margin-right: 5px;
+}
+
+.dudu{
+    display: flex;
+    align-items: center;
+}
+
+#orig-bu, #orig-du{
+    margin-left: 73px;
+    height: 100px;
+    width: 100px;
+}
+
+#buwin{
+    height: 100px;
+    width: 0px;
+}
+#duwin{
+    height: 100px;
+    width: 0px;
+}
+#bulose{
+    height: 100px;
+    width: 0px;
+}
+#dulose{
+    height: 100px;
+    width: 0px;
+}
+
+button{
+    height: 30px;
+    width: 75px;
+    font-size: 15px;
+    font-family: 'Pacifico', cursive;
+}
+
+.msg{
+    align-self: flex-start;
+    justify-content: center;
+}
+
+.reset{
+
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-top: 15px; 
+}
+
+#reset:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    body{
+        height: 100%;
+        background-image: url("https://cdn.pixabay.com/photo/2018/03/17/19/36/connection-3234929_1280.jpg");
+        background-size:cover;
+        background-repeat: repeat;
+        background-position: center center;
+        color: antiquewhite;
+        font-family: 'Pacifico', cursive;
+    }
+
+    .game-box{
+        flex-wrap: wrap;
+    }
+
+    .game{
+        display: grid;
+        grid-template-rows: repeat(3,15vw);
+        grid-template-columns: repeat(3,15vw);
+    }
+
+    .game-info{
+        margin-top: 34px;
+    }
+
+    .msg h1{
+        font-size: 2rem;
+    }
+
+    .emotion{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10vw;
+    }
+
+    .reset{
+
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        margin-top: 20vw; 
+    }
+}
