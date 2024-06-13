@@ -4,3 +4,5 @@ It is a responsive webpage you can operate on any device, built using HTML, CSS 
 
 ## To Run
 Just open the index.html file and start playing.
+
+![image](https://github.com/Ishaan1710/Tic-Tac-Toe/assets/128537896/f61b5fdd-af3d-4ff3-b52b-308c0f4a5867)
